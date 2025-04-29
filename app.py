@@ -19,9 +19,8 @@ def home():
     )
 
 
-@app.route("/predict", methods=["GET"])
+@app.route("/predict", methods=["POST"])
 def predict():
-    return "<h1> Prediction route is working...</h1>"
     """
     Predict salary based on input JSON payload
     Expected keys: age, gender, country, highest_deg, coding_exp, title, company_size
